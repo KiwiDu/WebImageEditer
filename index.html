@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="global.css">
+
+    <meta charset="UTF-8">
+    <title>CanvasAPI Test</title>
+
+</head>
+
+<body onload="loadBtns();loadPic('test.png');">
+    <div id="mainDisplay">
+        <div id="main">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="colorPicker"></div>
+    </div>
+    <div id="uipanel">
+        <div class="b">
+            <input type="text" id="url">
+            <button id="load">Load</button>
+            <button id="push">Cut</button>
+            <button id="save">Save</button>
+        </div>
+        <br>
+        <div class="b">
+            <a id="down" href="test.png">Download the pic here!</a>
+        </div>
+    </div>
+</body>
+
+</html>
