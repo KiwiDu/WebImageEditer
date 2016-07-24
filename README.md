@@ -1,7 +1,8 @@
+ >> ## Notice
+ >> This is ***alpha*** version,download and run it on a local server.
+    
 # WebImageEditer  
 ###Version: alpha 1.1
-## Notice: 
-This is ***alpha*** version,download to run.
 
 ##Menu
  - Description

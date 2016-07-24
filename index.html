@@ -4,7 +4,10 @@
 <head>
 
     <script src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="global.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="global.min.css">
 
     <meta charset="UTF-8">
     <title>CanvasAPI Test</title>
@@ -14,7 +17,8 @@
 <body onload="loadBtns();loadPic('test.png');">
     <div id="mainDisplay">
         <div id="main">
-            <canvas id="canvas"></canvas>
+            <!--canvas id="UICanvas"></canvas-->
+            <canvas id="renderCanvas"></canvas>
         </div>
         <div id="colorPicker"></div>
     </div>
@@ -24,10 +28,7 @@
             <button id="load">Load</button>
             <button id="push">Cut</button>
             <button id="save">Save</button>
-        </div>
-        <br>
-        <div class="b">
-            <a id="down" href="test.png">Download the pic here!</a>
+            <input type="range" id="slide" min="0" max="255">
         </div>
     </div>
 </body>
