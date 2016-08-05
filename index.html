@@ -2,35 +2,43 @@
 <html>
 
 <head>
-
-    <script src="main.js"></script>
-
-
-
-    <link rel="stylesheet" type="text/css" href="global.min.css">
-
-    <meta charset="UTF-8">
-    <title>CanvasAPI Test</title>
-
+    <script src='/js/main.js'></script>
+    <script src='/js/color-process.js'></script>
+    <!--[if IE]> <script src='ie-alert.js'></script> <![endif]-->
+    <link rel='stylesheet' type='text/css' href='/css/global.css'>
+    <link rel='stylesheet' type='text/css' href='/css/ui.css'>
+    <meta charset='UTF-8'>
+    <link href="/resource/ico/favicon.ico" rel="shortcut icon" />
+    <title>ImageEdit</title>
 </head>
 
-<body onload="loadBtns();loadPic('test.png');">
-    <div id="mainDisplay">
-        <div id="main">
-            <!--canvas id="UICanvas"></canvas-->
-            <canvas id="renderCanvas"></canvas>
+<body onload='loadPic("resource/image/test.png");'>
+    <div id='wrapper' class='center'>
+        <div id='content' class='center'>
+            <div id='main' class='center'>
+                <div id='loading'></div>
+                <canvas id='renderCanvas'></canvas>
+                <div id='colorPicker'></div>
+            </div>
+            <div id='uiPanel' class='center'>
+                <div id='loadPanel'>
+                    <input type='text' id='url' />
+                    <button id='load'>Load</button>
+                </div>
+                <div id='savePanel'>
+                    <button id='save'>Save</button>
+                </div>
+                <div id='cutPanel'>
+                    <button id='push'>Cut</button>
+                    <input type='range' id='slide' min='0' max='255'>
+                </div>
+            </div>
         </div>
-        <div id="colorPicker"></div>
-    </div>
-    <div id="uipanel">
-        <div class="b">
-            <input type="text" id="url">
-            <button id="load">Load</button>
-            <button id="push">Cut</button>
-            <button id="save">Save</button>
-            <input type="range" id="slide" min="0" max="255">
+        <div id='sidebar'>
+            <ul class='sidebar'></ul>
         </div>
     </div>
+    <script src='/js/dom-actions.js'></script>
 </body>
 
 </html>

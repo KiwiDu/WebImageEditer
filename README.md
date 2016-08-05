@@ -1,9 +1,7 @@
  >> ## Notice
- >> This is ***alpha*** version,download and run it on a local server.
+    This is ***alpha*** version,download and run it on a local server.
     
 # WebImageEditer  
-###Version: alpha 1.1
-
 ##Menu
  - Description
  - Function    
@@ -38,7 +36,5 @@ Currently not found.
 Thanks [MDN][1] for their complete translated [canvas tutorial][2].
   
 ##End
-Thanks for taking your time to read. Contact me on Github or email me at : kiwidu@outlook.com
-
 [1]: https://developer.mozilla.org 
 [2]: https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial

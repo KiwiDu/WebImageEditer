@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: #555;
+    flex-direction: row;
+    font-family: '微软雅黑';
+    width: 100vw;
+    height: 100vh;
+}
+div#wrapper {
+    flex-direction: row;
+    height: 100%;
+}
+div#content {
+    flex-direction: column;
+    flex-shrink: 1;
+}
+div#main {
+    width: 55vw;
+    height: 65vh;
+    background-color: #888;
+    flex-direction: column;
+}
+div#sidebar {
+    flex-shrink: 9;
+}
+div#colorPicker {
+    width: 55vw;
+    height: 1.5em;
+    text-align: center;
+}
+div#UIPanel {
+    flex-direction: row;
+}
+canvas {
+    margin: auto;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#loading {
+    display: none;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50);
+}

@@ -1,0 +1,39 @@
+ul.sidebar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.sidebar li {
+    display: flex;
+    clear: both;
+}
+ul.sidebar li + li {
+    border-top: 0.1em solid #000;
+}
+ul.sidebar li a {
+    background-color: #eee;
+    color: #111;
+    width: 5em;
+    height: 1.8em;
+    text-decoration: none;
+    text-align: center;
+}
+ul.sidebar li a:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+div#colorPicker.light {
+    color: #111;
+}
+div#colorPicker.dark {
+    color: #eee;
+}
+div#loading[working=true] {
+    display: block;
+}
+div#loading[working=false] {
+    display: none;
+}
+div#uiPanel div {
+    display: none;
+}
